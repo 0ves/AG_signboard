@@ -18,7 +18,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "AG production",
-  description: "",
+  description: "signboard company",
+  icons:{
+    icon:"/aglogo.png"}
 };
 
 export default function RootLayout({

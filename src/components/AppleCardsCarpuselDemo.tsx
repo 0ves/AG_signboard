@@ -38,7 +38,7 @@ const data = [
   },
   {
     title: "LED Tube Signboard",
-    src: "ledtubesign.png",
+    src: "ledtubesignboard.png",
   },
   {
     title: "Backlight Fabric Signboard",
