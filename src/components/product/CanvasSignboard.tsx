@@ -37,9 +37,9 @@ function CanvasSignboard() {
               —mounted on a sturdy 1 to 1.5 inch wooden or aluminium frame.
             </p>
             <p className="text-muted-foreground">
-              Whether you're setting up at an event or decorating a business
+              Whether you&rsquo;re setting up at an event or decorating a business
               space, our canvas signboards help keep your brand consistent and
-              professional. They're an affordable way to make a lasting
+              professional. They&rsquo;re an affordable way to make a lasting
               impression and turn heads—perfect for showcasing your message or
               adding artistic flair with class and confidence.
             </p>

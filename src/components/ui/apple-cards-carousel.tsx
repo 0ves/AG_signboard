@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState, createContext } from "react";
 import { IconArrowNarrowLeft, IconArrowNarrowRight } from "@tabler/icons-react";
-import { AnimatePresence, motion } from "motion/react";
+import {  motion } from "motion/react";
 import { useRouter } from "next/navigation";
 
 interface CarouselProps {
@@ -13,7 +13,7 @@ interface CarouselProps {
 type CardType = {
   src: string;
   title: string;
-  category: string;
+
   // content removed as per requirement
 };
 
@@ -27,7 +27,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   const carouselRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex] = useState(0);
 
   // useEffects for scroling fucionlaty
   useEffect(() => {
@@ -157,11 +157,11 @@ export const BlurImage = ({
   alt,
   ...rest
 }: React.ImgHTMLAttributes<HTMLImageElement> & { src: string }) => {
-  const [isLoading, setLoading] = useState(true);
+  
   return (
     <img
       className={`h-full w-full transition duration-300  ${className ?? ""}`}
-      onLoad={() => setLoading(false)}
+      
       src={src}
       width={width}
       height={height}

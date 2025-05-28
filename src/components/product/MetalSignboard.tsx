@@ -1,8 +1,8 @@
-import react from "react";
+
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
-import { Card } from "@/components/ui/card";
+// import { Card } from "@/components/ui/card";
 import Image from "next/image";
 export default function MetalSignboard() {
   return (
@@ -39,7 +39,7 @@ export default function MetalSignboard() {
                 bring elegance and class to any project .signboards bring {" "}
                 <span className="text-accent-foreground font-bold">
                   elegance and class to any
-                project—whether it's a sleek nameplate on your door or a bold
+                project—whether it&rsquo;s a sleek nameplate on your door or a bold
                 
                 </span>{" "}
                  branding element for your business.

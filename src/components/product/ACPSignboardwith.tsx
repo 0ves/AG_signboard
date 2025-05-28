@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Mail, SendHorizonal } from "lucide-react";
+// import { Mail, SendHorizonal } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { TextEffect } from "@/components/motion-primitives/text-effect";
 import { AnimatedGroup } from "@/components/motion-primitives/animated-group";

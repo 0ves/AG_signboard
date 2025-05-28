@@ -177,8 +177,8 @@ const createVariantsWithTransition = (
 ): Variants => {
   if (!transition) return baseVariants;
 
-  const { exit: _, ...mainTransition } = transition;
-
+  const { ...mainTransition } = transition;
+   
   return {
     ...baseVariants,
     visible: {
@@ -251,7 +251,7 @@ export function TextEffect({
         ...containerTransition,
         exit: {
           staggerChildren: customStagger ?? stagger,
-          staggerDirection: -1,
+          staggerDirection: 1,
         },
       }
     ),

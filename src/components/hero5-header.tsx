@@ -2,11 +2,11 @@
 import Link from "next/link";
 import { useRef } from "react";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import React from "react";
 import { cn } from "@/lib/utils";
 import ModeToggle from "./ModeToggle";
-import Image from "next/image";
+// import Image from "next/image";
 import Logo from "./ui/Logo";
 
 const menuItems = [
@@ -17,7 +17,7 @@ const menuItems = [
 ];
 
 export const HeroHeader = () => {
-  const [open, setOpen] = React.useState(false);
+  // const [open, setOpen] = React.useState(false);
   const [menuState, setMenuState] = React.useState(false);
   const [isScrolled, setIsScrolled] = React.useState(false);
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -34,39 +34,28 @@ export const HeroHeader = () => {
       
     };
     //this is the one
-    React.useEffect(()=>{
-         const ref = containerRef
-        // console.log("here in use effect");
-        
-    const listener = (event: any) => {
-     
-      // console.log('listener');
-      // console.log(ref);
-      
-      // DO NOTHING if the element being clicked is the target element or their children
-      if (!ref.current || ref.current.contains(event.target)) {
-        // console.log("same element");
-        
-        return
-      }
-      handleClose();
-    };
-    if(menuState==true){
+React.useEffect(() => {
+  const ref = containerRef;
 
-      console.log("event element");
-      document.addEventListener("mousedown", listener);
-      document.addEventListener("touchstart", listener);
-    } 
+  const listener = (event: MouseEvent | TouchEvent) => {
+    const target = event.target;
+    if (!ref.current || !(target instanceof Node) || ref.current.contains(target)) {
+      return;
+    }
+    handleClose();
+  };
 
-    return () => { 
-      console.log("removal");
-      
-      document.removeEventListener("mousedown", listener);
-      document.removeEventListener("touchstart", listener);
-    };
-  
-      
-    },[menuState])
+  if (menuState) {
+    document.addEventListener("mousedown", listener);
+    document.addEventListener("touchstart", listener);
+  }
+
+  return () => {
+    document.removeEventListener("mousedown", listener);
+    document.removeEventListener("touchstart", listener);
+  };
+}, [menuState]);
+
 // end hrer
   React.useEffect(() => {
     const handleScroll = () => {

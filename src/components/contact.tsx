@@ -1,9 +1,10 @@
-import { Card } from '@/components/ui/card'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
-import { Button } from '@/components/ui/button'
-import { Label } from '@/components/ui/label'
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+// import { Card } from '@/components/ui/card'
+// import { Input } from '@/components/ui/input'
+// import { Textarea } from '@/components/ui/textarea'
+// import { Button } from '@/components/ui/button'
+
+// import { Label } from '@/components/ui/label'
+// import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import Link from 'next/link'
 
 export default function ContactSection() {
@@ -34,7 +35,7 @@ export default function ContactSection() {
                 </div>
 
                 <div className="h-3 border-x bg-[repeating-linear-gradient(-45deg,var(--color-border),var(--color-border)_1px,transparent_1px,transparent_6px)]"></div>
-                <form action="" className="border px-4 py-12 lg:px-0 lg:py-24">
+                {/* <form action="" className="border px-4 py-12 lg:px-0 lg:py-24">
                     <Card className="mx-auto max-w-lg p-8 sm:p-16">
                         <h3 className="text-xl font-semibold">Let's get you to the right place</h3>
                         <p className="mt-4 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, dolor.</p>
@@ -98,7 +99,7 @@ export default function ContactSection() {
                             <Button>Submit</Button>
                         </div>
                     </Card>
-                </form>
+                </form> */}
             </div>
         </section>
     )
