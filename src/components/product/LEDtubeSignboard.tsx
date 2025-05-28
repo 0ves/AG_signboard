@@ -15,12 +15,12 @@ return(
                 <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24">
                     <div className="relative mb-6 sm:mb-0">
                         <div className="bg-linear-to-b aspect-76/59 relative rounded-2xl from-zinc-300 to-transparent p-px dark:from-zinc-700">
-                            <Image src="/ledTubesign.png" className=" rounded-[15px] dark:block" alt="LED tube Sign Board" width={1207} height={929} />
+                            <Image src="/ledtubesignboard.png" className=" rounded-[15px] dark:block" alt="LED tube Sign Board" width={1207} height={929} />
                            
                         </div>
                     </div>
 
-                    <div className="relative space-y-4">
+                    <div className="relative space-y-4"> 
                         <p className="text-muted-foreground">
                              A 3 ft width creative will have approximately 2 – 3 years of life span. <span className="text-accent-foreground font-bold">It supports an entire ecosystem</span> — from products innovate.
                         </p>
