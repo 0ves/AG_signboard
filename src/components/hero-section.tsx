@@ -160,7 +160,7 @@ export default function HeroSection() {
                   />
                   <Image
                     className="z-2  aspect-15/8 relative rounded-2xl border dark:hidden"
-                    src="/AG_production.png"
+                    src="/billboard.jpg"
                     alt="app screen"
                      width="2700"
                     height="1440"
