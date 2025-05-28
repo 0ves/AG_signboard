@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState, createContext } from "react";
+import React, { useEffect, useRef, useState, createContext, JSX } from "react";
 import { IconArrowNarrowLeft, IconArrowNarrowRight } from "@tabler/icons-react";
 import {  motion } from "motion/react";
 import { useRouter } from "next/navigation";
