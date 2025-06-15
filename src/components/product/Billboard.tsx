@@ -15,9 +15,9 @@ function Billboard() {
           <div className="relative mb-6 sm:mb-0">
             <div className="bg-linear-to-b aspect-76/59 relative rounded-2xl from-zinc-300 to-transparent p-px dark:from-zinc-700">
               <Image
-                src="/pexels-lukas-hartmann-304281-1827234.jpg"
+                src="/billboard1.png"
                 className=" rounded-[15px] dark:block"
-                alt="payments illustration dark"
+                alt="billboard"
                 width={1207}
                 height={929}
               />

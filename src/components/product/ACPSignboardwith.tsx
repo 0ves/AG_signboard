@@ -133,7 +133,7 @@ const AppComponent = () => {
       <div className="space-y-3">
         <div className="text-foreground border-b border-white/10 pb-3 text-sm font-medium"></div>
         <Image
-          src="/shopping.jpg"
+          src="/acpsignboardwith.jpg"
           className=" rounded-[15px] dark:block"
           alt="ACP Signboard"
           width={1207}
